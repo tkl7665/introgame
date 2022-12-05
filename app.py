@@ -81,8 +81,32 @@ def start_game():
 			print('Invalid choice. Integers only.')
 			print()
 
+print()
+print('   ___________  ')
+print('  /           \\  ')
+print(' |     /**     | ')
+print('  \\    \\*     /  ')
+print('   \\    *\\   /   ')
+print('    \\  **/  /    ')
+print('     \\     /     ')
+print('      \\   /      ')
+print('       \\_/      ')
+print()
+
 print('Your First Game')
 print('-------------------')
 print('You define what you want to do here')
 
+print()
 start_game()
+
+'''
+1. Changing the names of the units
+2. Changing the name of the options
+3. Counting the success rate of capturing a unit
+4. Changing the odds of getting a unit
+5. Changing the duration of a dice roll
+6. Adding the option of doing something with a unit
+7. Releasing a unit
+8. Saving and loading the state of the game
+'''
