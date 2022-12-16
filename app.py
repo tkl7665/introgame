@@ -2,7 +2,7 @@ import sys
 import random
 import time
 
-unit_list=['Unit A','Unit B','Unit C','Unit D','Unit E']
+unit_list=['toy','book','storybook','hat','lego']
 captured_units=[]
 
 def print_list(units):
@@ -24,14 +24,19 @@ def option_1():
 			print('{0} selected'.format(unit_list[choice]))
 			print('Rolling dice')
 
-			for i in range(5):
+			for i in range(4):
 				print('.')
 				time.sleep(1)
+				print('x')
+				print('m')
+				print('o')
 
-			dice_roll=random.randint(1,6)
+			dice_roll=random.randint(1,8)
 			print('{0} rolled!'.format(dice_roll))
 
-			if dice_roll%2==0:
+			#if dice_roll%2==0:
+			if dice_roll >3 :
+
 				print('Success!')
 				captured_units.append(unit_list[choice])
 			else:
@@ -93,7 +98,7 @@ print('      \\   /      ')
 print('       \\_/      ')
 print()
 
-print('Your First Game')
+print('my first time programming')
 print('-------------------')
 print('You define what you want to do here')
 
