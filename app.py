@@ -35,14 +35,18 @@ def option_1():
 			print('{0} rolled!'.format(dice_roll))
 
 			#if dice_roll%2==0:
-			if dice_roll >3 :
-
-				print('Success!')
+			#if dice_roll>3:
+			if dice_roll>2 and dice_roll<6:
+				print('double Success!')
 				captured_units.append(unit_list[choice])
+				captured_units.append(unit_list[choice])
+			elif dice_roll <3:
+				captured_units.append(unit_list[choice])	
+				print(' Success!')
 			else:
 				print('Failed!')
 		else:
-			raise ValueError	
+			raise ValueError
 
 	except ValueError:
 		print('Invalid choice. Integers only')
